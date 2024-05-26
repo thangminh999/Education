@@ -1,0 +1,181 @@
+===== SW0
+1. Gan IP cac router vung ben phai
+2. Vao Laptop Admin >> Config >> FastEthernet0 >> doi MAC Address thanh 00D0.9709.81C5
+3. Vao Command Line >> ping 0.0.0.0 >> ssh -L cisco 192.168.70.77(dia chi ip ma vua ping 0.0.0.0 ra)
+
+vlan 10
+name IT
+exit
+vlan 20
+name Employee
+exit
+vlan 70
+name admin
+exit
+vlan 88
+name wifi
+exit
+vlan 99
+name management
+exit
+int f0/2
+switch mode trunk
+switch trunk native vlan 99
+exit
+int f0/3
+switch mode trunk
+switch trunk native vlan 99
+exit
+int f0/1
+switch mode trunk
+switch trunk native vlan 99
+exit
+int f0/4
+switch mode acc
+switch acc vlan 70
+exit
+int f0/5
+swi mode acc
+switch acc vlan 70
+exit
+vtp domain cisco
+vtp mode server
+
+=== SW1
+vtp domain cisco
+vtp mode client
+int range f0/1-2
+switch mode trunk
+switch trunk native vlan 99
+exit
+int range f0/4-6
+switch mode acc
+switch acc vlan 99
+exit
+int f0/3
+switch mode acc
+switch acc vlan 88
+exit
+int f0/7
+switch mode acc
+switch acc vlan 10
+exit
+int f0/8
+switch mode acc 
+switch acc vlan 20
+
+== RR_VPN
+int g0/0/0
+no sh
+exit
+int g0/0/0.10
+encap dot1q 10
+ip add 172.16.10.1 255.255.255.0
+ip help 192.168.99.99
+exit
+int g0/0/0.20
+en dot	20
+ip add 172.16.20.1 255.255.255.0
+ip help 192.168.99.99
+exit
+int g0/0/0.70
+en dot1q 70
+ip add 192.168.70.1 255.255.255.0
+ip help 192.168.99.99
+exit
+int g0/0/0.88
+en dot 88
+ip add 172.16.88.1 255.255.255.0
+ip help 192.168.99.99
+exit
+int g0/0/0.99
+en dot 99 native
+ip add 192.168.99.1 255.255.255.0
+ip help 192.168.99.99
+exit
+router rip
+ver 2
+no au
+net 172.16.10.0
+net 192.168.70.0
+net 192.168.99.0
+net 10.0.0.0
+re sta
+de o
+
+== DaLat
+router rip
+ver 2
+no au
+net 192.168.4.0
+re sta
+de o
+exit
+ip route 0.0.0.0 0.0.0.0 209.165.202.1
+access-list 1 permit any
+ip nat inside source list 1 int s0/1/0 overload
+int s0/1/0
+ip nat outside
+exit
+int s0/1/1
+ip nat inside
+exit
+int tunnel 1
+ip add 1.1.1.2 255.255.255.252
+tunnel source s0/1/0
+tunnel des 209.165.201.1
+exit
+ip route 192.168.70.0 255.255.255.0 1.1.1.1
+ip route 192.168.99.0 255.255.255.0 1.1.1.1
+
+== GW
+router rip
+ver 2
+no au
+net 10.0.0.0
+re sta
+de o
+exit
+ip route 0.0.0.0 0.0.0.0 209.165.201.2
+access-list 1 permit any
+ip nat inside source list 1 int s0/1/0 overload
+int s0/1/0
+ip nat outside
+exit
+int s0/1/1
+ip nat inside
+exit
+int tunnel 1
+ip add 1.1.1.1 255.255.255.252
+tunnel source s0/1/1
+tunnel des 209.165.202.2
+exit
+ip route 192.168.4.0 255.255.255.252 1.1.1.2
+ip route 192.168.2.0 255.255.255.0 1.1.1.2
+
+== Nhatrang
+ip route 0.0.0.0 0.0.0.0 209.165.203.1
+access-list 1 permit any
+ip nat inside source list 1 int s0/1/0 overload
+int s0/1/0
+ip nat outside
+exit
+int g0/0/0
+ip nat inside
+
+== DL01
+router rip
+ver 2
+no au
+net 192.168.4.0
+net 192.168.2.0
+
+== Lap top
+vao Command line
+ssh -l cisco 192.168.70.254
+test lai
+ping 0.0.0.0
+ftp 192.168.70.22
+dir 
+get VPN.txt
+mo file ra

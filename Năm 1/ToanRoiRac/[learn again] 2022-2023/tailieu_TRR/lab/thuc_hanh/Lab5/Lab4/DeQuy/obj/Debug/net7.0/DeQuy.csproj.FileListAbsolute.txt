@@ -1,0 +1,15 @@
+D:\Toán rời rạc\Lab\Lab4\DeQuy\bin\Debug\net7.0\DeQuy.exe
+D:\Toán rời rạc\Lab\Lab4\DeQuy\bin\Debug\net7.0\DeQuy.deps.json
+D:\Toán rời rạc\Lab\Lab4\DeQuy\bin\Debug\net7.0\DeQuy.runtimeconfig.json
+D:\Toán rời rạc\Lab\Lab4\DeQuy\bin\Debug\net7.0\DeQuy.dll
+D:\Toán rời rạc\Lab\Lab4\DeQuy\bin\Debug\net7.0\DeQuy.pdb
+D:\Toán rời rạc\Lab\Lab4\DeQuy\obj\Debug\net7.0\DeQuy.csproj.AssemblyReference.cache
+D:\Toán rời rạc\Lab\Lab4\DeQuy\obj\Debug\net7.0\DeQuy.GeneratedMSBuildEditorConfig.editorconfig
+D:\Toán rời rạc\Lab\Lab4\DeQuy\obj\Debug\net7.0\DeQuy.AssemblyInfoInputs.cache
+D:\Toán rời rạc\Lab\Lab4\DeQuy\obj\Debug\net7.0\DeQuy.AssemblyInfo.cs
+D:\Toán rời rạc\Lab\Lab4\DeQuy\obj\Debug\net7.0\DeQuy.csproj.CoreCompileInputs.cache
+D:\Toán rời rạc\Lab\Lab4\DeQuy\obj\Debug\net7.0\DeQuy.dll
+D:\Toán rời rạc\Lab\Lab4\DeQuy\obj\Debug\net7.0\refint\DeQuy.dll
+D:\Toán rời rạc\Lab\Lab4\DeQuy\obj\Debug\net7.0\DeQuy.pdb
+D:\Toán rời rạc\Lab\Lab4\DeQuy\obj\Debug\net7.0\DeQuy.genruntimeconfig.cache
+D:\Toán rời rạc\Lab\Lab4\DeQuy\obj\Debug\net7.0\ref\DeQuy.dll

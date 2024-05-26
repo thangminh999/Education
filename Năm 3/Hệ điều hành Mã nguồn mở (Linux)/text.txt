@@ -1,0 +1,72 @@
+https://www.hostinger.vn/huong-dan/tar-command
+
+## - Tao file nén .tar Linux:
+
+	tar -cvf sampleArchive.tar /home/sampleArchive
+
+	c – T?o file .tar m?i
+	v – Hi?n th? quá trình nén lên màn hình
+	f – Tên file
+
+## - Tao file nén .tar.gz trong Linux
+
+	tar -cvzf sampleArchive.tar.gz /home/sampleArchive
+
+	Tùy ch?n z có nghia là s? d?ng gzip d? nén
+
+## - Tao file nén .tar.bz2 trong Linux b?ng l?nh tar:
+
+	tar -cvjf sampleArchive.tar.bz2 /home/sampleArchive
+
+	Ð? nén file .tar.bz2, b?n s? c?n thêm tùy ch?n -j
+
+## - Làm the nào de giai nén file .tar trong Linux
+	
+	tar -xvf sampleArchive.tar
+
+	# N?u b?n mu?n gi?i nén sang thu m?c khác hãy dùng tùy ch?n -C, ví d? nhu sau:
+
+		tar -xvf sampleArchive.tar -C /home/ExtractedFiles/
+
+## - Gi?i nén Gzip
+	
+	tar -xvf sampleArchive.tar.gz
+	# Gi?i nén vào thu m?c
+
+		tar -xvf sampleArchive.tar.gz -C /home/ExtractedFiles/
+
+## - Gi?i nén Bzip
+	
+	tar -xvf sampleArchive.tar.bz2
+
+## - Làm th? nào d? li?t kê n?i dung c?a file nén Linux
+
+	tar -tvf sampleArchive.tar
+
+	# Gzip
+		tar -tvf sampleArchive.tar.gz
+		
+		# Bzip
+			tar -tvf sampleArchive.tar.bz2
+
+## - Làm th? nào d? gi?i nén 1 file trong file .tar
+	
+	tar -xvf sampleArchive.tar example.sh
+
+	tar --extract --file= sampleArchive.tar example.sh
+
+	# Gzip
+		tar -zxvf sampleArchive.tar.gz example.sh
+
+		tar --extract --file= sampleArchive.tar.gz example.sh
+	# Bzip
+		tar -jxvf sampleArchive.tar.bz2 example.sh
+
+		tar --extract --file= sampleArchive.tar.bz2 example.sh
+
+## - Làm th? nào d? thêm file vào file nén .tar
+
+	tar -rvf sampleArchive.tar example.jpg
+
+	# Thêm thu m?c
+			tar -rvf sampleArchive.tar image_dir

@@ -1,0 +1,15 @@
+D:\Toán rời rạc\Lab\Lab4\Lab4\ToHop\bin\Debug\net7.0\ToHop.exe
+D:\Toán rời rạc\Lab\Lab4\Lab4\ToHop\bin\Debug\net7.0\ToHop.deps.json
+D:\Toán rời rạc\Lab\Lab4\Lab4\ToHop\bin\Debug\net7.0\ToHop.runtimeconfig.json
+D:\Toán rời rạc\Lab\Lab4\Lab4\ToHop\bin\Debug\net7.0\ToHop.dll
+D:\Toán rời rạc\Lab\Lab4\Lab4\ToHop\bin\Debug\net7.0\ToHop.pdb
+D:\Toán rời rạc\Lab\Lab4\Lab4\ToHop\obj\Debug\net7.0\ToHop.csproj.AssemblyReference.cache
+D:\Toán rời rạc\Lab\Lab4\Lab4\ToHop\obj\Debug\net7.0\ToHop.GeneratedMSBuildEditorConfig.editorconfig
+D:\Toán rời rạc\Lab\Lab4\Lab4\ToHop\obj\Debug\net7.0\ToHop.AssemblyInfoInputs.cache
+D:\Toán rời rạc\Lab\Lab4\Lab4\ToHop\obj\Debug\net7.0\ToHop.AssemblyInfo.cs
+D:\Toán rời rạc\Lab\Lab4\Lab4\ToHop\obj\Debug\net7.0\ToHop.csproj.CoreCompileInputs.cache
+D:\Toán rời rạc\Lab\Lab4\Lab4\ToHop\obj\Debug\net7.0\ToHop.dll
+D:\Toán rời rạc\Lab\Lab4\Lab4\ToHop\obj\Debug\net7.0\refint\ToHop.dll
+D:\Toán rời rạc\Lab\Lab4\Lab4\ToHop\obj\Debug\net7.0\ToHop.pdb
+D:\Toán rời rạc\Lab\Lab4\Lab4\ToHop\obj\Debug\net7.0\ToHop.genruntimeconfig.cache
+D:\Toán rời rạc\Lab\Lab4\Lab4\ToHop\obj\Debug\net7.0\ref\ToHop.dll

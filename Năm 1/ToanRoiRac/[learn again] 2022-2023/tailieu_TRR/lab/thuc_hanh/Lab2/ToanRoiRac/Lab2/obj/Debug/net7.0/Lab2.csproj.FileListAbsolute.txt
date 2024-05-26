@@ -1,0 +1,15 @@
+D:\Toán rời rạc\Lab\TestCode\ToanRoiRac\Lab2\obj\Debug\net7.0\Lab2.csproj.AssemblyReference.cache
+D:\Toán rời rạc\Lab\TestCode\ToanRoiRac\Lab2\obj\Debug\net7.0\Lab2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Toán rời rạc\Lab\TestCode\ToanRoiRac\Lab2\obj\Debug\net7.0\Lab2.AssemblyInfoInputs.cache
+D:\Toán rời rạc\Lab\TestCode\ToanRoiRac\Lab2\obj\Debug\net7.0\Lab2.AssemblyInfo.cs
+D:\Toán rời rạc\Lab\TestCode\ToanRoiRac\Lab2\obj\Debug\net7.0\Lab2.csproj.CoreCompileInputs.cache
+D:\Toán rời rạc\Lab\TestCode\ToanRoiRac\Lab2\bin\Debug\net7.0\Lab2.exe
+D:\Toán rời rạc\Lab\TestCode\ToanRoiRac\Lab2\bin\Debug\net7.0\Lab2.deps.json
+D:\Toán rời rạc\Lab\TestCode\ToanRoiRac\Lab2\bin\Debug\net7.0\Lab2.runtimeconfig.json
+D:\Toán rời rạc\Lab\TestCode\ToanRoiRac\Lab2\bin\Debug\net7.0\Lab2.dll
+D:\Toán rời rạc\Lab\TestCode\ToanRoiRac\Lab2\bin\Debug\net7.0\Lab2.pdb
+D:\Toán rời rạc\Lab\TestCode\ToanRoiRac\Lab2\obj\Debug\net7.0\Lab2.dll
+D:\Toán rời rạc\Lab\TestCode\ToanRoiRac\Lab2\obj\Debug\net7.0\refint\Lab2.dll
+D:\Toán rời rạc\Lab\TestCode\ToanRoiRac\Lab2\obj\Debug\net7.0\Lab2.pdb
+D:\Toán rời rạc\Lab\TestCode\ToanRoiRac\Lab2\obj\Debug\net7.0\Lab2.genruntimeconfig.cache
+D:\Toán rời rạc\Lab\TestCode\ToanRoiRac\Lab2\obj\Debug\net7.0\ref\Lab2.dll

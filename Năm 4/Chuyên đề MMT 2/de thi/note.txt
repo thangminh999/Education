@@ -1,0 +1,229 @@
+﻿Câu 1: thiết lập ip 
+RR_VPN_Gateway
+en
+conf t
+int g0/0/0
+no shut
+int g0/0/0.10
+encapsulation dot1Q 10
+ip add 172.16.10.1 255.255.255.0
+ip helper-address 192.168.99.99
+int g0/0/0.20
+encapsulation dot1Q 20
+ip add 172.16.20.1 255.255.255.0
+ip helper-address 192.168.99.99
+int g0/0/0.70
+encapsulation dot1Q 70
+ip add 192.168.70.1 255.255.255.0
+ip helper-address 192.168.99.99
+int g0/0/0.88
+encapsulation dot1Q 88
+ip add 192.168.88.1 255.255.255.0
+ip helper-address 192.168.99.99
+int g0/0/0.99
+encapsulation dot1Q 99 native
+ip add 192.168.99.1 255.255.255.0
+ip helper-address 192.168.99.99
+int s0/1/0
+ip add 10.0.0.1 255.255.255.252
+no shut
+
+GW
+en
+conf t
+int s0/1/0
+ip add 10.0.0.2 255.255.255.252
+no shut
+int s0/1/1
+ip add 209.165.201.1 255.255.255.252
+no shut
+int tunnel 1
+ip add 1.1.1.1 255.255.255.252
+tunnel source s0/1/1
+tunnel destination 209.165.202.2
+int tunnel 2
+ip add 2.2.2.1 255.255.255.252
+tunnel source s0/1/1
+tunnel destination 209.165.203.2
+exit
+ip route 0.0.0.0 0.0.0.0 209.165.201.2
+
+DaLat
+en
+conf t
+int tunnel 1
+ip add 1.1.1.2 255.255.255.252
+tunnel source s0/1/0
+tunnel destination 209.165.201.1
+exit
+ip route 0.0.0.0 0.0.0.0 209.165.202.1
+int s0/1/0
+ip add 209.165.202.2 255.255.255.252
+no shut
+int s0/1/1
+ip add 192.168.4.1 255.255.255.252
+no shut
+
+DL01_VPN_Gateway
+en
+conf t
+int g0/0/0
+ip add 192.168.2.1 255.255.255.0
+no shut
+int s0/1/0
+ip add 192.168.4.2 255.255.255.252
+no shut
+
+NhaTrang
+en
+conf t
+int g0/0/0
+ip add 192.168.3.1 255.255.255.0
+no shut
+int s0/1/0
+ip add 209.165.203.2 255.255.255.252
+no shut
+int tunnel 2
+ip add 2.2.2.2 255.255.255.252
+tunnel source s0/1/0
+tunnel destination 209.165.201.1
+exit
+ip route 0.0.0.0 0.0.0.0 209.165.203.1
+
+Câu 2:
+RR_VPN_Gateway
+router rip
+ver 2
+no au
+net 10.0.0.0
+net 172.16.0.0
+net 192.168.70.0
+net 192.168.88.0
+net 192.168.99.0
+
+GW
+router rip
+ver 2
+no au
+net 10.0.0.0
+redistribute static
+default-information originate
+exit
+
+Câu 3:
+GW
+access-list 1 permit any
+ip nat inside source list 1 interface Serial0/1/0 overload
+int s0/1/0
+ip nat outside
+int s0/1/1
+ip nat inside
+
+Câu 4:
+Vô Laptop0 --> Web Browser --> Nhập ip 192.168.0.100 --> Ra được địa chỉ MAC
+Vô Laptop Administrator --> Config --> FastEthernet0 --> MAC Address : 00E0.F74D.2A7D
+Vô Doc_Server --> Web Browser --> Nhập ip 192.168.99.19 --> Ra được tài khoản
+Vô Laptop Administrator --> Command Prompt
+telnet 192.168.70.253
+Username: Cisco
+Password: Cisco
+en
+cisco
+conf t
+int f0/1
+no switchport trunk allowed vlan 1,70,88,99
+int range f0/1-3
+sw trunk native vlan 99
+
+SW1
+en
+conf t
+int range f0/1-2
+sw trunk native vlan 99
+
+Bật DHCP máy PC0, PC1, Laptop Administrator
+
+DaLat
+router rip
+ver 2
+no au
+net 192.168.4.0
+exit
+ip route 10.0.0.0 255.255.255.252 1.1.1.1 
+ip route 192.168.70.0 255.255.255.0 1.1.1.1 
+ip route 192.168.99.0 255.255.255.0 1.1.1.1
+
+DL01_VPN_Gateway
+router rip
+ver 2
+no au
+net 192.168.4.0
+net 192.168.2.0
+
+RR_VPN_Gateway:
+
+crypto isakmp policy 10
+ encr aes 256
+ authentication pre-share
+ group 5
+ lifetime 3600
+!
+crypto isakmp key cisco address 192.168.4.2
+!
+!
+!
+crypto ipsec transform-set 50 ah-sha-hmac esp-aes 256 esp-sha-hmac
+!
+crypto map MYMAP 10 ipsec-isakmp 
+ set peer 192.168.4.2
+ set pfs group5
+ set security-association lifetime seconds 900
+ set transform-set 50 
+ match address 101
+!
+interface Serial0/1/0
+ ip address 10.0.0.1 255.255.255.252
+ clock rate 64000
+ crypto map MYMAP
+
+
+DL01_VPN_Gateway:
+
+crypto isakmp policy 10
+ encr aes 256
+ authentication pre-share
+ group 5
+ lifetime 3600
+!
+crypto isakmp key cisco address 10.0.0.1
+!
+!
+!
+crypto ipsec transform-set 50 ah-sha-hmac esp-aes 256 esp-sha-hmac
+!
+crypto map MYMAP 10 ipsec-isakmp 
+ set peer 10.0.0.1
+ set pfs group5
+ set security-association lifetime seconds 900
+ set transform-set 50 
+ match address 101
+!
+interface Serial0/1/0
+ ip address 192.168.4.2 255.255.255.252
+ clock rate 64000
+ crypto map MYMAP
+
+WR_ITCOM
+Vô Wireless --> SSID : IT_COM
+		SSID Broadcast: Enabled
+		--> Save setting
+Vô Wireless Security --> RADIUS Server: 192	168	88	88
+		     --> Shared Secret: chuyendemmt
+		     --> Save setting
+
+Laptop0
+Config
+Wireless0
+Chọn WPA2 --> Nhập User ID: cisco
+	           Password: cisco
+

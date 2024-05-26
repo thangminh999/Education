@@ -1,0 +1,36 @@
+--MSSV: 2011438
+--Họ tên: Hoàng Ngọc Minh Thắng
+
+Bài tập 1:
+• Địa chỉ MAC đích là bao nhiêu: b0 be 76 df cc 34
+Hãy cho biết số OUI của vendor nào: b0 be 76
+
+• Địa chỉ MAC nguồn là bao nhiêu: 00 08 ca 33 69 fa 
+Hãy cho biết số OUI của vendor nào: 00 08 ca 
+
+• Ethernet Frame có Type là gì: 08 00
+
+Nếu Frame là IP hãy phân tích tiếp các trường sau:  
+•Version: 4 
+•IHL: 5 
+•TOS: 00 
+•Total Length: 00 28
+•Identifier: 2e b7 
+•F1: 010
+•F0: 0 0000 0000 0000
+•TTL: 80
+Dựa trên số TTL hãy dự đoán hệ điều hành của gói tin này bằng bảng 1.
+ 
+Hệ điều hành dự đoán: 80 = 128 => Hệ điều hành Windows 
+• Protocol: 06 => TCP 
+• CheckSum: 46 0d 
+• Source Address (hệ 10): 192.168.0.101 
+• Destination Address (hệ 10): 172.217.24.37
+
+Nếu là TCP hãy cho biết các trường sau:  
+• Source Port (hệ 10): 53799 
+• Destination Port (hệ 10): 443 
+• Sequence Number: 3d 78 3a 68 
+• Acknowledgment Number: d4 37 32 bb
+• Flag: (cho biết cờ nào đang bật) 01 0000 => ACK 
+• Windows Size: 8235

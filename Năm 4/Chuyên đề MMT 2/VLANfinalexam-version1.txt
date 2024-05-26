@@ -1,0 +1,113 @@
+===== SW0
+1. Gan IP
+2. Vao Laptop Admin >> Config >> FastEthernet0 >> doi MAC Address 00D0.9709.81C6 --> 00D0.9709.81C5
+3. Vao Command Line >> ping 0.0.0.0 >> ssh -L cisco 192.168.70.77(dia chi ip ma vua ping 0.0.0.0 ra)
+
+vlan 10
+name IT
+!
+vlan 20
+name Employee
+!
+vlan 70
+name admin
+!
+vlan 88
+name wifi
+!
+vlan 99
+name management
+!
+int f0/2
+switch mode trunk
+switch trunk native vlan 99
+!
+int f0/3
+switch mode trunk
+switch trunk native vlan 99
+!
+int f0/1
+switch mode trunk
+switch trunk native vlan 99
+!
+int f0/4
+switch mode acc
+switch acc vlan 70
+!
+int f0/5
+swi mode acc
+switch acc vlan 70
+!
+vtp domain cisco
+vtp mode server
+
+=== SW1
+vtp domain cisco
+vtp mode client
+!
+int range f0/1-2
+switch mode trunk
+switch trunk native vlan 99
+!
+int range f0/4-6
+switch mode acc
+switch acc vlan 99
+!
+int f0/3
+switch mode acc
+switch acc vlan 88
+!
+int f0/7
+switch mode acc
+switch acc vlan 10
+!
+int f0/8
+switch mode acc 
+switch acc vlan 20
+
+== AAA_DHCP
+Thay doi lai VLAN88
+172.16.88.1
+Save lai
+
+== RR_VPN
+int g0/0/0
+no sh
+!
+int g0/0/0.10
+encap dot1q 10
+ip add 172.16.10.1 255.255.255.0
+ip help 192.168.99.99
+!
+int g0/0/0.20
+en dot	20
+ip add 172.16.20.1 255.255.255.0
+ip help 192.168.99.99
+!
+int g0/0/0.70
+en dot1q 70
+ip add 192.168.70.1 255.255.255.0
+ip help 192.168.99.99
+!
+int g0/0/0.88
+en dot 88
+ip add 172.16.88.1 255.255.255.0
+ip help 192.168.99.99
+!
+int g0/0/0.99
+en dot 99 native
+ip add 192.168.99.1 255.255.255.0
+ip help 192.168.99.99
+!
+router rip
+ver 2
+no au
+net 172.16.10.0
+net 192.168.70.0
+net 192.168.99.0
+net 10.0.0.0
+!
+
+
+
+

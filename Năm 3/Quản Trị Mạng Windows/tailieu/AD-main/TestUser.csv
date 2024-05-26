@@ -1,0 +1,11 @@
+﻿Name,GivenName,Surname,AccountName,UserPrincipalName,Pathaddress,PasswordInput,Status
+Bui Minh Hieu,Hieu,Bui Minh,HieuBM,HieuBM@demo.local,"OU=Test,DC=demo,DC=local",P@ssw0rd,Enabled
+Nguyen Minh Nhat,Nhat,Nguyen Minh,NhatNM,NhatNM@demo.local,"OU=Test,DC=demo,DC=local",P@ssw0rd,Enabled
+Dinh Huong Giang,Giang,Dinh Huong,GiangDH,GiangDH@demo.local,"OU=Test,DC=demo,DC=local",P@ssw0rd,Enabled
+Pham Thi Ngoc Minh,Minh,Pham Thi Ngoc,MinhPT,MinhPT@demo.local,"OU=Test,DC=demo,DC=local",P@ssw0rd,Enabled
+Khuc Tung Lam,Lam,Khuc Tung,LamKT,LamKT@demo.local,"OU=Test,DC=demo,DC=local",P@ssw0rd,Enabled
+Nguyen Kha Nam,Nam,Nguyen Kha,NamNK,NamNK@demo.local,"OU=Test,DC=demo,DC=local",P@ssw0rd,Enabled
+Trinh Duc Ha,Ha,Trinh Duc,HaTD,HaTD@demo.local,"OU=Test,DC=demo,DC=local",P@ssw0rd,Enabled
+Le Duc Tien,Tien,Le Duc,TienLD,TienLD@demo.local,"OU=Test,DC=demo,DC=local",P@ssw0rd,Enabled
+Nguyen Thu Phuong,Phuong,Nguyen Thu,PhuongNT,PhuongNT@demo.local,"OU=Test,DC=demo,DC=local",P@ssw0rd,Enabled
+Ho Ngoc Bao,Bao,Ho Ngoc,BaoHN,BaoHN@demo.local,"OU=Test,DC=demo,DC=local",P@ssw0rd,Enabled

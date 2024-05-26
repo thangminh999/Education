@@ -1,0 +1,41 @@
+####### NAT Pool (GW)
+ip nat pool HCM-IP 27.79.78.1 27.79.78.2 netmask 255.255.255.240
+access-list 1 permit any
+ip nat inside source list 1 pool HCM-IP overload
+
+####### Tunnel (GW)
+int tunnel 0
+tunnel source g0/0/0
+tunnel destination 116.115.3.2
+ip add 1.1.1.1 255.255.255.252
+!
+int tunnel 1
+tunnel source g0/0/0
+tunnel destination 116.115.5.2
+ip address 7.7.7.1 255.255.255.252
+!
+int tunnel 2
+tunnel source g0/0/0
+tunnel destination 116.115.6.2
+ip address 9.9.9.1 255.255.255.252
+
+####### (GW)
+ip route 0.0.0.0 0.0.0.0 116.115.0.2
+ip route 192.168.60.0 255.255.255.0 1.1.1.2
+
+####### AAA (GW, DMZ-R, HCM01, HCM02, HCM03, HCM-Lan01, HCM-Lan02)
+enable secret cisco
+ip domain-name cisco.com
+crypto key generate rsa
+1024
+aaa new-model
+
+!
+aaa authentication login default group tacacs+ none 
+aaa authentication login telnet_lines group tacacs+ 
+aaa accounting exec default start-stop group tacacs+
+tacacs-server host 10.0.254.253 key thichuyende
+
+line vty 0 4
+ logging synchronous
+ login authentication telnet_lines

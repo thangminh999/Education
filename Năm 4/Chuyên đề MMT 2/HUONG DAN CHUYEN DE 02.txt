@@ -1,0 +1,58 @@
+###################################################
+Hướng dẫn cấu hình NAT trên Interface
+1. Tạo ACL ánh xạ các mạng nội bộ
+access-list 1 permit any
+2. Gán lệnh NAT với ACL 
+ip nat inside source list 1 interface s0/1/0 overload (interface s0/1/0 là cổng nối ra internet)
+3. Gán cổng NAT Inside và NAT outside
+intface gi0/0/0
+ip nat inside 
+interfaec s0/1/0
+ip nat outside
+
+#########################################################################
+Hướng dẫn cấu hình NAT trên Pool (KHÔNG DÙNG TRONG BÀI NÀY)
+1. Tạo ACL ánh xạ các mạng nội bộ
+access-list 1 permit any
+2. Tạo vùng NAT pool
+ip nat pool NAT 209.165.200.1 209.165.200.10 netmask 255.255.255.224
+3. Gán pool NAT vào ACL
+ip nat inside source list 1 pool NAT overload
+4. Gán cổng NAT Inside và NAT outside
+intface gi0/0/0
+ip nat inside 
+interfaec s0/1/0
+ip nat outside
+
+#########################################################################
+Hướng dẫn cấu hình Syslog Sever 
+
+logging trap debugging
+logging 10.0.254.199
+login on-success log 
+login on-failure log
+
+Hướng dẫn cấu hình hệ thống AAA
+enable secret cisco
+ip domain-name cisco.com
+crypto key generate rsa
+1024
+aaa new-model
+
+!
+aaa authentication login default group tacacs+ none 
+aaa authentication login telnet_lines group tacacs+ 
+aaa accounting exec default start-stop group tacacs+
+tacacs-server host 10.0.254.253 key ciscosecret
+
+line vty 0 4
+ logging synchronous
+ login authentication telnet_lines
+
+###################################################
+Hướng dẫn cấu hình NTP Server 
+
+ntp server 10.0.254.253
+ntp update-calendar
+
+Kiểm tra đồng hồ bằng show clock

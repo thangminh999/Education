@@ -1,0 +1,15 @@
+-switchport nonegotiate:  sử dụng để vô hiệu hóa tính năng trao đổi thông tin độc lập (auto-negotiation
+-spanning-tree vlan 3,9 priority 24576: sẽ đặt độ ưu tiên của switch trong các VLAN 3 và 9 là 24576, 
+tăng khả năng để switch đó được chọn làm root bridge
+-switchport port-security maximum 2: được sử dụng để giới hạn số lượng địa chỉ MAC (Media Access Control) được phép học trên một cổng switch.
+-switchport port-security mac-address sticky": được sử dụng để tự động học địa chỉ MAC của các thiết bị được kết nối vào cổng switch và cho phép hạn chế truy cập vào mạng từ các thiết bị khác.
+-switchport port-security violation restrict": được sử dụng để cấu hình hành động mà switch sẽ thực hiện khi phát hiện các địa chỉ MAC không được phép truy cập vào cổng switch.
+-switchport port-security violation protect: được sử dụng để cấu hình cổng switch để bảo vệ khỏi các cuộc tấn công bằng cách loại bỏ các khối lượng dữ liệu bị vi phạm chính sách bảo mật, thay vì tắt cổng hoặc gửi cảnh báo.
+-spanning-tree portfast: được sử dụng để cấu hình cổng switch để bỏ qua quá trình chờ (listening) và học (learning) trong quá trình chuyển đổi trạng thái từ Blocking sang Forwarding của giao thức Spanning Tree Protocol (STP).
+-spanning-tree bpduguard enable: được sử dụng để cấu hình một cổng switch để tắt hoặc vô hiệu hóa cổng đó khi switch nhận được một gói tin BPDUs (Bridge Protocol Data Units).
+-storm-control broadcast level 40: được sử dụng để cấu hình chức năng kiểm soát đám mây trên switch. Trong trường hợp này, đám mây là các gói tin broadcast trên mạng.
+-switchport port-security mac-address sticky: chỉ hoạt động khi chế độ bảo mật port-security đã được kích hoạt trên cổng switch. Nếu chế độ port-security chưa được kích hoạt, việc sử dụng lệnh này sẽ không có hiệu lực.
+-standby 14 ip 192.168.14.1: được sử dụng để cấu hình một địa chỉ IP ảo cho một giao diện giao thức HSRP (Hot Standby Router Protocol) có số hiệu là 14 trên một thiết bị mạng.
+-standby 14 priority 120" được sử dụng để cấu hình độ ưu tiên (priority) cho một giao diện HSRP (Hot Standby Router Protocol) có số hiệu là 14 trên một thiết bị mạng.
+-standby 14 preempt" được sử dụng để cấu hình tính năng preempt (chiếm ưu tiên) cho một giao diện HSRP (Hot Standby Router Protocol) có số hiệu là 14 trên một thiết bị mạng.
+-no auto-summary" được sử dụng để tắt tính năng tự động tóm tắt các địa chỉ mạng (automatic summarization) trong giao thức định tuyến OSPF (Open Shortest Path First).
