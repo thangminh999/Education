@@ -1,0 +1,5 @@
+C:\Users\HELLO\documents\visual studio 2015\Projects\Mảng1Chieu\BaiTap1\bin\Debug\BaiTap1.exe.config
+C:\Users\HELLO\documents\visual studio 2015\Projects\Mảng1Chieu\BaiTap1\bin\Debug\BaiTap1.exe
+C:\Users\HELLO\documents\visual studio 2015\Projects\Mảng1Chieu\BaiTap1\bin\Debug\BaiTap1.pdb
+C:\Users\HELLO\documents\visual studio 2015\Projects\Mảng1Chieu\BaiTap1\obj\Debug\BaiTap1.exe
+C:\Users\HELLO\documents\visual studio 2015\Projects\Mảng1Chieu\BaiTap1\obj\Debug\BaiTap1.pdb

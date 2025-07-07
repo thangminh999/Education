@@ -1,0 +1,88 @@
+﻿@model List<ShoppingCart>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form method="post">
+    @if (Model.Count() > 0)
+    {
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <br />
+                    <table class="table table-striped table-bordered" id="myTable">
+                        <thead>
+                            <tr align="center">
+                                <th>Hình ảnh</th>
+                                <th>Tên sách</th>
+                                <th>Số lượng</th>
+                                <th>Giá tiền</th>
+                                <th>Tổng cộng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                decimal total = 0;
+                            }
+                            @foreach (var item in Model)
+                            {
+                                decimal itemTotal = (decimal)item.Count * (decimal)item.Book.Price; // Chuyển đổi thành kiểu decimal
+                                total += itemTotal;
+                                <tr style="text-align:center;">
+                                    <td>
+                                        <img src="@item.Book.ImagePath" width="60">
+                                    </td>
+                                    <td>
+                                        @item.Book.Title
+                                    </td>
+                                    <td style="padding-left: 100px">
+                                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                            <div class="btn-group me-2" role="group" aria-label="First group">
+                                                <button asp-action="Decrease" asp-route-cartId="@item.Id" class="btn btn-danger mr-2"><i class="bi bi-dash"></i></button>
+                                                <input type="text" style="max-width:45px; text-align:center;" class="form-control mr-2" value="@item.Count" />
+                                                <button asp-action="Add" asp-route-cartId="@item.Id" asp-route-bookId="@item.BookId" class="btn btn-success mr-2"><i class="bi bi-plus"></i></button>
+                                                <button asp-action="Remove" asp-route-cartId="@item.Id" asp-route-bookId="@item.BookId" class="btn btn-outline-danger"> <i class="bi bi-trash3"></i></button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        @item.Book.Price.ToString("0.00") ₺
+                                    </td>
+                                    <td>
+                                        @itemTotal.ToString("0.00") ₺
+                                    </td>
+                                </tr>
+                            }
+                            <tr>
+                                <td colspan="4" style="text-align:right">
+                                    <strong>Tổng cộng :</strong>
+                                </td>
+                                <td style="background-color:darkred">
+                                    @total.ToString("0.00") ₺
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="/" class="btn btn-primary form-control">Tiếp tục mua sắm</a>
+                        </div>
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-4">
+                            <a asp-area="Customer" asp-controller="Cart" asp-action="Summary" class="btn btn-success form-control mt-2">Thanh toán</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div>
+            Không có sản phẩm trong giỏ hàng của bạn..
+        </div>
+    }
+</form>

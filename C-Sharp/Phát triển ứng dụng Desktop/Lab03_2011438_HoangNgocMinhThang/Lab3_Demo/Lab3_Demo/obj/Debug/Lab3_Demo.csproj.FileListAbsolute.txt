@@ -1,0 +1,11 @@
+C:\Users\thang\Desktop\Hoc_Tap\PTUDDK\Lab03_2011438_HoangNgocMinhThang\Lab3_Demo\Lab3_Demo\bin\Debug\Lab3_Demo.exe.config
+C:\Users\thang\Desktop\Hoc_Tap\PTUDDK\Lab03_2011438_HoangNgocMinhThang\Lab3_Demo\Lab3_Demo\bin\Debug\Lab3_Demo.exe
+C:\Users\thang\Desktop\Hoc_Tap\PTUDDK\Lab03_2011438_HoangNgocMinhThang\Lab3_Demo\Lab3_Demo\bin\Debug\Lab3_Demo.pdb
+C:\Users\thang\Desktop\Hoc_Tap\PTUDDK\Lab03_2011438_HoangNgocMinhThang\Lab3_Demo\Lab3_Demo\obj\Debug\Lab3_Demo.csproj.AssemblyReference.cache
+C:\Users\thang\Desktop\Hoc_Tap\PTUDDK\Lab03_2011438_HoangNgocMinhThang\Lab3_Demo\Lab3_Demo\obj\Debug\Lab3_Demo.csproj.SuggestedBindingRedirects.cache
+C:\Users\thang\Desktop\Hoc_Tap\PTUDDK\Lab03_2011438_HoangNgocMinhThang\Lab3_Demo\Lab3_Demo\obj\Debug\Lab3_Demo.frmSinhVien.resources
+C:\Users\thang\Desktop\Hoc_Tap\PTUDDK\Lab03_2011438_HoangNgocMinhThang\Lab3_Demo\Lab3_Demo\obj\Debug\Lab3_Demo.Properties.Resources.resources
+C:\Users\thang\Desktop\Hoc_Tap\PTUDDK\Lab03_2011438_HoangNgocMinhThang\Lab3_Demo\Lab3_Demo\obj\Debug\Lab3_Demo.csproj.GenerateResource.cache
+C:\Users\thang\Desktop\Hoc_Tap\PTUDDK\Lab03_2011438_HoangNgocMinhThang\Lab3_Demo\Lab3_Demo\obj\Debug\Lab3_Demo.csproj.CoreCompileInputs.cache
+C:\Users\thang\Desktop\Hoc_Tap\PTUDDK\Lab03_2011438_HoangNgocMinhThang\Lab3_Demo\Lab3_Demo\obj\Debug\Lab3_Demo.exe
+C:\Users\thang\Desktop\Hoc_Tap\PTUDDK\Lab03_2011438_HoangNgocMinhThang\Lab3_Demo\Lab3_Demo\obj\Debug\Lab3_Demo.pdb

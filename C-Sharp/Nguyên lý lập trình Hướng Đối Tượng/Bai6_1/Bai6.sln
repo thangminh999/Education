@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyPhanSo", "QuanLyPhanSo\QuanLyPhanSo.csproj", "{43053460-7EC1-48F8-A6BB-C2DD3B68744C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLySinhVien", "QuanLySinhVien\QuanLySinhVien.csproj", "{4E6E7024-218C-4F13-AD5E-2134F36E797A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyHocPhan", "QuanLyHocPhan\QuanLyHocPhan.csproj", "{5EFD8500-CCC3-4B99-8801-35C23468B1D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyKetQuaHocTap", "QuanLyKetQuaHocTap\QuanLyKetQuaHocTap.csproj", "{E3E40778-BC55-4E24-A1B2-3C40CBFE6413}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLySoThueBao", "QuanLySoThueBao\QuanLySoThueBao.csproj", "{4526E17A-415D-4119-8587-0EF805830392}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyCPU", "QuanLyCPU\QuanLyCPU.csproj", "{00F47F26-6D3A-4DEE-8C04-A9BC8B1D99A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43053460-7EC1-48F8-A6BB-C2DD3B68744C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43053460-7EC1-48F8-A6BB-C2DD3B68744C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43053460-7EC1-48F8-A6BB-C2DD3B68744C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43053460-7EC1-48F8-A6BB-C2DD3B68744C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E6E7024-218C-4F13-AD5E-2134F36E797A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E6E7024-218C-4F13-AD5E-2134F36E797A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E6E7024-218C-4F13-AD5E-2134F36E797A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E6E7024-218C-4F13-AD5E-2134F36E797A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EFD8500-CCC3-4B99-8801-35C23468B1D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EFD8500-CCC3-4B99-8801-35C23468B1D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EFD8500-CCC3-4B99-8801-35C23468B1D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EFD8500-CCC3-4B99-8801-35C23468B1D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3E40778-BC55-4E24-A1B2-3C40CBFE6413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3E40778-BC55-4E24-A1B2-3C40CBFE6413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3E40778-BC55-4E24-A1B2-3C40CBFE6413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3E40778-BC55-4E24-A1B2-3C40CBFE6413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4526E17A-415D-4119-8587-0EF805830392}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4526E17A-415D-4119-8587-0EF805830392}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4526E17A-415D-4119-8587-0EF805830392}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4526E17A-415D-4119-8587-0EF805830392}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00F47F26-6D3A-4DEE-8C04-A9BC8B1D99A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00F47F26-6D3A-4DEE-8C04-A9BC8B1D99A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00F47F26-6D3A-4DEE-8C04-A9BC8B1D99A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00F47F26-6D3A-4DEE-8C04-A9BC8B1D99A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

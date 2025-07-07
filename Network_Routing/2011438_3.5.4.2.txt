@@ -1,0 +1,37 @@
+#
+IP address - Subnet Mask
+HQ:
+Fa0/0 : 192.168.9.129 - 255.255.255.224
+S0/0  : 192.168.9.161 - 255.255.255.224
+S0/1  : 192.168.9.97 - 255.255.255.224
+Branch 1
+Fa0/0 : 192.168.9.225 - 255.255.255.224
+S0/0  : 192.168.9.193 - 255.255.255.224
+S0/1  : 192.168.9.190 - 255.255.255.224
+Branch 2
+Fa0/0 : 192.168.9.65 - 255.255.255.224
+S0/0  : 192.168.9.33 - 255.255.255.224
+S0/1  : 192.168.9.126 - 255.255.255.224
+
+PC1:192.168.9.158 - 255.255.255.224           default gateway 192.168.9.129
+PC2:192.168.9.222 - 255.255.255.224           default gateway 192.168.9.193
+PC3:192.168.9.254 - 255.255.255.224           default gateway 192.168.9.255
+PC4:192.168.9.94 - 255.255.255.224            default gateway 192.168.9.65
+PC5:192.168.9.62 - 255.255.255.224            default gateway 192.168.9.33
+
+#
+Task 1: Examine the Network Requirements.
+ Examine the network requirements and answer the questions below. Keep in mind that IP addresses will 
+ be needed for each of the LAN interfaces.
+ How many subnets are needed?_____8_____ 
+ What is the maximum number of IP addresses that are needed for a single subnet?_____31_____
+ How many IP addresses are needed for each of the branch LANs?_____16_____
+ What is the total number of IP addresses that are needed?_____101_____
+Task 2: Design an IP Addressing Scheme
+ Subnet the 192.168.1.0/24 network into the appropriate number of subnets. 
+ Can the 192.168.1.0/24 network be subnetted to fit the network requirements?_____no_____
+ If the “number of subnets” requirement is met, what is the maximum number of hosts per subnet?
+ _____30_____
+ If the “maximum number of hosts” requirement is met, what is the number of subnets that will be available to use?
+ _____2_____ 
+

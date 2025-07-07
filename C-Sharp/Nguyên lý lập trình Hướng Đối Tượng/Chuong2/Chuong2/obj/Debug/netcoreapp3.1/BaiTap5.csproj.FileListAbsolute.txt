@@ -1,0 +1,13 @@
+C:\Users\THANG-PC\Desktop\Chuong2\Chuong2\bin\Debug\netcoreapp3.1\BaiTap5.exe
+C:\Users\THANG-PC\Desktop\Chuong2\Chuong2\bin\Debug\netcoreapp3.1\BaiTap5.deps.json
+C:\Users\THANG-PC\Desktop\Chuong2\Chuong2\bin\Debug\netcoreapp3.1\BaiTap5.runtimeconfig.json
+C:\Users\THANG-PC\Desktop\Chuong2\Chuong2\bin\Debug\netcoreapp3.1\BaiTap5.runtimeconfig.dev.json
+C:\Users\THANG-PC\Desktop\Chuong2\Chuong2\bin\Debug\netcoreapp3.1\BaiTap5.dll
+C:\Users\THANG-PC\Desktop\Chuong2\Chuong2\bin\Debug\netcoreapp3.1\BaiTap5.pdb
+C:\Users\THANG-PC\Desktop\Chuong2\Chuong2\obj\Debug\netcoreapp3.1\BaiTap5.csprojAssemblyReference.cache
+C:\Users\THANG-PC\Desktop\Chuong2\Chuong2\obj\Debug\netcoreapp3.1\BaiTap5.AssemblyInfoInputs.cache
+C:\Users\THANG-PC\Desktop\Chuong2\Chuong2\obj\Debug\netcoreapp3.1\BaiTap5.AssemblyInfo.cs
+C:\Users\THANG-PC\Desktop\Chuong2\Chuong2\obj\Debug\netcoreapp3.1\BaiTap5.csproj.CoreCompileInputs.cache
+C:\Users\THANG-PC\Desktop\Chuong2\Chuong2\obj\Debug\netcoreapp3.1\BaiTap5.dll
+C:\Users\THANG-PC\Desktop\Chuong2\Chuong2\obj\Debug\netcoreapp3.1\BaiTap5.pdb
+C:\Users\THANG-PC\Desktop\Chuong2\Chuong2\obj\Debug\netcoreapp3.1\BaiTap5.genruntimeconfig.cache

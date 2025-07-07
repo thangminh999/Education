@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLSinhVienModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Lop">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenLop" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="SinhVien" Relationship="Self.FK__SinhVien__MaLop__267ABA7A" FromRole="Lop" ToRole="SinhVien" />
+  </EntityType>
+  <EntityType Name="SinhVien">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HoTen" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MaLop" Type="Int32" />
+    <NavigationProperty Name="Lop" Relationship="Self.FK__SinhVien__MaLop__267ABA7A" FromRole="SinhVien" ToRole="Lop" />
+  </EntityType>
+  <Association Name="FK__SinhVien__MaLop__267ABA7A">
+    <End Role="Lop" Type="Self.Lop" Multiplicity="0..1" />
+    <End Role="SinhVien" Type="Self.SinhVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Lop">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SinhVien">
+        <PropertyRef Name="MaLop" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QLSinhVienContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Lop" EntityType="Self.Lop" />
+    <EntitySet Name="SinhVien" EntityType="Self.SinhVien" />
+    <AssociationSet Name="FK__SinhVien__MaLop__267ABA7A" Association="Self.FK__SinhVien__MaLop__267ABA7A">
+      <End Role="Lop" EntitySet="Lop" />
+      <End Role="SinhVien" EntitySet="SinhVien" />
+    </AssociationSet>
+    <FunctionImport Name="InsertStudent">
+      <Parameter Name="HoTen" Mode="In" Type="String" />
+      <Parameter Name="MaLop" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

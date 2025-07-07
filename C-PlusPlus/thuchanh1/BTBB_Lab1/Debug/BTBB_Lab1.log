@@ -1,0 +1,6 @@
+﻿  BTBB_Lab1.cpp
+C:\Users\Thang\Desktop\c++\thuchanh1\BTBB_Lab1\BTBB_Lab1.cpp(286,9): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Thang\Desktop\c++\thuchanh1\BTBB_Lab1\BTBB_Lab1.cpp(286): error C4700: uninitialized local variable 'x' used
+C:\Users\Thang\Desktop\c++\thuchanh1\BTBB_Lab1\BTBB_Lab1.cpp(286): error C4700: uninitialized local variable 'b' used
+C:\Users\Thang\Desktop\c++\thuchanh1\BTBB_Lab1\BTBB_Lab1.cpp(286): error C4700: uninitialized local variable 'a' used
+C:\Users\Thang\Desktop\c++\thuchanh1\BTBB_Lab1\BTBB_Lab1.cpp(286): error C4700: uninitialized local variable 'y' used

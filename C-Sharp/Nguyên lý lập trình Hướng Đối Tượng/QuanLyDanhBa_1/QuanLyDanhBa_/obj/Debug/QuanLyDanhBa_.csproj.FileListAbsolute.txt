@@ -1,0 +1,14 @@
+Z:\2011423_NgoHoaiPhong\QuanLyDanhBa_\QuanLyDanhBa_\bin\Debug\QuanLyDanhBa_.exe.config
+Z:\2011423_NgoHoaiPhong\QuanLyDanhBa_\QuanLyDanhBa_\bin\Debug\QuanLyDanhBa_.exe
+Z:\2011423_NgoHoaiPhong\QuanLyDanhBa_\QuanLyDanhBa_\bin\Debug\QuanLyDanhBa_.pdb
+Z:\2011423_NgoHoaiPhong\QuanLyDanhBa_\QuanLyDanhBa_\obj\Debug\QuanLyDanhBa_.exe
+Z:\2011423_NgoHoaiPhong\QuanLyDanhBa_\QuanLyDanhBa_\obj\Debug\QuanLyDanhBa_.pdb
+Z:\2011423_NgoHoaiPhong\QuanLyDanhBa_\QuanLyDanhBa_\obj\Debug\QuanLyDanhBa_.csprojResolveAssemblyReference.cache
+F:\2011423_NgoHoaiPhong\QuanLyDanhBa_\QuanLyDanhBa_\bin\Debug\QuanLyDanhBa_.exe.config
+F:\2011423_NgoHoaiPhong\QuanLyDanhBa_\QuanLyDanhBa_\obj\Debug\QuanLyDanhBa_.exe
+F:\2011423_NgoHoaiPhong\QuanLyDanhBa_\QuanLyDanhBa_\obj\Debug\QuanLyDanhBa_.pdb
+E:\2011423_NgoHoaiPhong\QuanLyDanhBa_\QuanLyDanhBa_\bin\Debug\QuanLyDanhBa_.exe.config
+E:\2011423_NgoHoaiPhong\QuanLyDanhBa_\QuanLyDanhBa_\obj\Debug\QuanLyDanhBa_.exe
+E:\2011423_NgoHoaiPhong\QuanLyDanhBa_\QuanLyDanhBa_\obj\Debug\QuanLyDanhBa_.pdb
+E:\2011423_NgoHoaiPhong\QuanLyDanhBa_\QuanLyDanhBa_\bin\Debug\QuanLyDanhBa_.exe
+E:\2011423_NgoHoaiPhong\QuanLyDanhBa_\QuanLyDanhBa_\bin\Debug\QuanLyDanhBa_.pdb

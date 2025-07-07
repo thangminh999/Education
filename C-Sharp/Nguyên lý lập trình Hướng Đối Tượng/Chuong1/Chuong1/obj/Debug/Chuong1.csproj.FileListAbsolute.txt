@@ -1,0 +1,6 @@
+C:\Users\THANG-PC\Desktop\Chuong1\Chuong1\bin\Debug\Chuong1.exe.config
+C:\Users\THANG-PC\Desktop\Chuong1\Chuong1\bin\Debug\Chuong1.exe
+C:\Users\THANG-PC\Desktop\Chuong1\Chuong1\bin\Debug\Chuong1.pdb
+C:\Users\THANG-PC\Desktop\Chuong1\Chuong1\obj\Debug\Chuong1.csprojResolveAssemblyReference.cache
+C:\Users\THANG-PC\Desktop\Chuong1\Chuong1\obj\Debug\Chuong1.exe
+C:\Users\THANG-PC\Desktop\Chuong1\Chuong1\obj\Debug\Chuong1.pdb

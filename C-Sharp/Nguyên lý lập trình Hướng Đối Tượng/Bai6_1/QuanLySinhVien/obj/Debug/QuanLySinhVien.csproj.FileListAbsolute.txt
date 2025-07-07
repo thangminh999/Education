@@ -1,0 +1,11 @@
+F:\C#\QuanLyPhanSo\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe.config
+F:\C#\QuanLyPhanSo\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe
+F:\C#\QuanLyPhanSo\QuanLySinhVien\bin\Debug\QuanLySinhVien.pdb
+F:\C#\QuanLyPhanSo\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
+F:\C#\QuanLyPhanSo\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
+F:\C#\Bai6\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe.config
+F:\C#\Bai6\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe
+F:\C#\Bai6\QuanLySinhVien\bin\Debug\QuanLySinhVien.pdb
+F:\C#\Bai6\QuanLySinhVien\obj\Debug\QuanLySinhVien.csprojResolveAssemblyReference.cache
+F:\C#\Bai6\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
+F:\C#\Bai6\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb

@@ -1,0 +1,10 @@
+D:\2011438\_LAB_DesktopDevelop-master\Lab6_Basic_Command\Lab6_Basic_Command\bin\Debug\Lab6_Basic_Command.exe.config
+D:\2011438\_LAB_DesktopDevelop-master\Lab6_Basic_Command\Lab6_Basic_Command\obj\Debug\Lab6_Basic_Command.csprojResolveAssemblyReference.cache
+D:\2011438\_LAB_DesktopDevelop-master\Lab6_Basic_Command\Lab6_Basic_Command\obj\Debug\Lab6_Basic_Command.Properties.Resources.resources
+D:\2011438\_LAB_DesktopDevelop-master\Lab6_Basic_Command\Lab6_Basic_Command\obj\Debug\Lab6_Basic_Command.csproj.GenerateResource.Cache
+D:\2011438\_LAB_DesktopDevelop-master\Lab6_Basic_Command\Lab6_Basic_Command\bin\Debug\Lab6_Basic_Command.exe
+D:\2011438\_LAB_DesktopDevelop-master\Lab6_Basic_Command\Lab6_Basic_Command\bin\Debug\Lab6_Basic_Command.pdb
+D:\2011438\_LAB_DesktopDevelop-master\Lab6_Basic_Command\Lab6_Basic_Command\obj\Debug\Lab6_Basic_Command.exe
+D:\2011438\_LAB_DesktopDevelop-master\Lab6_Basic_Command\Lab6_Basic_Command\obj\Debug\Lab6_Basic_Command.pdb
+D:\2011438\_LAB_DesktopDevelop-master\Lab6_Basic_Command\Lab6_Basic_Command\obj\Debug\Lab6_Basic_Command.frmFood.resources
+D:\2011438\_LAB_DesktopDevelop-master\Lab6_Basic_Command\Lab6_Basic_Command\obj\Debug\Lab6_Basic_Command.frmMonAn.resources

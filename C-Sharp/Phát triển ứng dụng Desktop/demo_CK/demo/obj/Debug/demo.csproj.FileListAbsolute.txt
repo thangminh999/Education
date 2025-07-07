@@ -1,0 +1,11 @@
+C:\Users\thang\Desktop\demo\demo\bin\Debug\demo.exe.config
+C:\Users\thang\Desktop\demo\demo\bin\Debug\demo.exe
+C:\Users\thang\Desktop\demo\demo\bin\Debug\demo.pdb
+C:\Users\thang\Desktop\demo\demo\obj\Debug\demo.csproj.AssemblyReference.cache
+C:\Users\thang\Desktop\demo\demo\obj\Debug\demo.csproj.SuggestedBindingRedirects.cache
+C:\Users\thang\Desktop\demo\demo\obj\Debug\demo.Properties.Resources.resources
+C:\Users\thang\Desktop\demo\demo\obj\Debug\demo.csproj.GenerateResource.cache
+C:\Users\thang\Desktop\demo\demo\obj\Debug\demo.csproj.CoreCompileInputs.cache
+C:\Users\thang\Desktop\demo\demo\obj\Debug\demo.exe
+C:\Users\thang\Desktop\demo\demo\obj\Debug\demo.pdb
+C:\Users\thang\Desktop\demo\demo\obj\Debug\demo.frmBanHang.resources

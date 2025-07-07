@@ -1,0 +1,4 @@
+﻿  program.cpp
+c:\users\maxsys\desktop\baitap\nlltct\onthi\onthi\program.cpp(8): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  OnThi.vcxproj -> C:\Users\Maxsys\Desktop\BaiTap\NLLTCT\OnThi\Debug\OnThi.exe
+  OnThi.vcxproj -> C:\Users\Maxsys\Desktop\BaiTap\NLLTCT\OnThi\Debug\OnThi.pdb (Full PDB)

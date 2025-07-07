@@ -1,0 +1,5 @@
+Z:\2011423_NgoHoaiPhong\Mang1Chieu\bin\Debug\Mang1Chieu.exe.config
+Z:\2011423_NgoHoaiPhong\Mang1Chieu\bin\Debug\Mang1Chieu.exe
+Z:\2011423_NgoHoaiPhong\Mang1Chieu\bin\Debug\Mang1Chieu.pdb
+Z:\2011423_NgoHoaiPhong\Mang1Chieu\obj\Debug\Mang1Chieu.exe
+Z:\2011423_NgoHoaiPhong\Mang1Chieu\obj\Debug\Mang1Chieu.pdb

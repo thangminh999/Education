@@ -1,0 +1,68 @@
+CREATE DATABASE QuanLyQuanCF
+GO
+
+USE QuanLyQuanCF
+
+-- -List-
+-- food
+-- table
+-- foodCategory
+-- account
+-- bill
+-- billInfo
+
+CREATE TABLE TableFood(
+	id INT IDENTITY PRIMARY KEY,
+	name NVARCHAR(100) DEFAULT N'Noname' NOT NULL,
+	status NVARCHAR(100) NOT NULL DEFAULT N'Trong'
+)
+GO
+
+CREATE TABLE Account(
+	userName NVARCHAR(100) NOT NULL PRIMARY KEY,
+	loginName NVARCHAR(100) NOT NULL DEFAULT N'test',
+	passWD NVARCHAR(1000) NOT NULL DEFAULT 0,
+	Type INT NOT NULL DEFAULT 0 --0/staff -- 1/admin
+)
+GO
+
+CREATE TABLE FoodCategory(
+	id INT IDENTITY PRIMARY KEY,
+	name NVARCHAR(100) NOT NULL DEFAULT N'Noname'
+)
+GO
+
+CREATE TABLE Food
+(
+	id	INT IDENTITY PRIMARY KEY,
+	name NVARCHAR(100) NOT NULL DEFAULT N'Noname',
+	idCategory INT NOT NULL,
+	price FLOAT NOT NULL DEFAULT 0,
+	--
+	FOREIGN KEY(idCategory) REFERENCES dbo.FoodCategory(id)
+)
+GO
+
+CREATE TABLE Bill(
+	id INT IDENTITY PRIMARY KEY,
+	DateIn DATE NOT NULL DEFAULT GETDATE(), 
+	DateOut DATE NOT NULL,
+	idTable INT NOT NULL,
+	status INT NOT NULL DEFAULT 0, -- 0/chuathantoan -- 1/dathanhtoan
+	--
+	FOREIGN KEY (idTable) REFERENCES dbo.FoodCategory(id)
+
+)
+GO
+
+CREATE TABLE BillInfo(
+	id INT IDENTITY PRIMARY KEY,
+	idBill INT NOT NULL,
+	idFood INT NOT NULL,
+	count INT NOT NULL DEFAULT 0,
+	--
+
+	FOREIGN KEY (idBill) REFERENCES dbo.Bill(id),
+	FOREIGN KEY (idFood) REFERENCES dbo.Food(id)
+)
+GO

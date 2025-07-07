@@ -1,0 +1,108 @@
+﻿@model IEnumerable<BookStore.Models.Book>
+
+@{
+    ViewData["Title"] = "Book";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container">
+    <p style="text-align:right;">
+        <a asp-action="Create" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Thêm sách</a>
+    </p>
+    <table class="table table-striped table-bordered" id="myTable">
+        <thead>
+            <tr>
+                <th style="text-align:center;">Hình ảnh</th>
+                <th style="text-align:center;">Tên sách</th>
+                <th style="text-align:center;">Ngày phát hành</th>
+                <th style="text-align:center;">Tình trạng tồn kho</th>
+                <th style="text-align:center;">Số lượng cổ phiếu</th>
+                <th style="text-align:center;">Thụ động tích cực</th>
+                <th style="text-align:center;">Chi tiết</th>
+                <th style="text-align:center;">Cập nhật</th>
+                <th style="text-align:center;">Xóa</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Count() > 0)
+            {
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @if (item.ImagePath == null)
+                            {
+                                <img src="~/img/Image/resim-yok.png" width="100" height="80" />
+                            }
+                            else
+                            {
+                                <img src="@item.ImagePath" width="100" height="80" />
+                            }
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Title)
+                        </td>
+                        <td>
+                            @Convert.ToDateTime(item.PublishDate).ToString("dd/MM/yyyy")
+                        </td>
+                        <td>
+                            @if (item.StockCount <= 0 || item.IsActive == false)
+                            {
+                                <label class="btn btn-danger"> Hết hàng</label>
+                                item.IsActive = false;
+                            }
+                            else
+                            {
+                                <label class="btn btn-success">Trong kho</label>
+                            }
+                        </td>
+                        <td>
+                            <p> @Html.DisplayFor(modelItem => item.StockCount) Adet</p>
+                        </td>
+                        <td>
+                            @if (item.IsActive == true)
+                            {
+                                <label class="btn btn-primary">Tích cực</label>
+                            }
+                            else
+                            {
+                                <label class="btn btn-danger">Thụ động</label>
+                            }
+                        </td>
+
+                        <td>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-info"> Chi tiết</a>
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-success"> Cập nhật</a>
+                        </td>
+                        <td align="center">
+                            <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="@("#DeleteBook-" + item.Id)" data-url="@Url.Action($"Delete/{item.Id}")">
+                                <i class="bi bi-trash3"></i> Xóa
+                            </button>
+                            @await Html.PartialAsync("_DeleteBookPartialView",item)
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                        <p>Không có dữ liệu</p>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+
+
+@* @section Scripts{
+    <script type="text/javascript">
+        $('#myTable').DataTable({
+            language: {
+                url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/tr.json'
+            }
+        });</script>
+} *@

@@ -1,0 +1,11 @@
+C:\Users\thang\Desktop\PTUDDK\Lab02\2011438_HoangNgocMinhThang_VD1\2011438_HoangNgocMinhThang_VD1\bin\Debug\2011438_HoangNgocMinhThang_VD1.exe.config
+C:\Users\thang\Desktop\PTUDDK\Lab02\2011438_HoangNgocMinhThang_VD1\2011438_HoangNgocMinhThang_VD1\bin\Debug\2011438_HoangNgocMinhThang_VD1.exe
+C:\Users\thang\Desktop\PTUDDK\Lab02\2011438_HoangNgocMinhThang_VD1\2011438_HoangNgocMinhThang_VD1\bin\Debug\2011438_HoangNgocMinhThang_VD1.pdb
+C:\Users\thang\Desktop\PTUDDK\Lab02\2011438_HoangNgocMinhThang_VD1\2011438_HoangNgocMinhThang_VD1\obj\Debug\2011438_HoangNgocMinhThang_VD1.csproj.AssemblyReference.cache
+C:\Users\thang\Desktop\PTUDDK\Lab02\2011438_HoangNgocMinhThang_VD1\2011438_HoangNgocMinhThang_VD1\obj\Debug\2011438_HoangNgocMinhThang_VD1.csproj.SuggestedBindingRedirects.cache
+C:\Users\thang\Desktop\PTUDDK\Lab02\2011438_HoangNgocMinhThang_VD1\2011438_HoangNgocMinhThang_VD1\obj\Debug\_2011438_HoangNgocMinhThang_VD1.frmTrungTam.resources
+C:\Users\thang\Desktop\PTUDDK\Lab02\2011438_HoangNgocMinhThang_VD1\2011438_HoangNgocMinhThang_VD1\obj\Debug\_2011438_HoangNgocMinhThang_VD1.Properties.Resources.resources
+C:\Users\thang\Desktop\PTUDDK\Lab02\2011438_HoangNgocMinhThang_VD1\2011438_HoangNgocMinhThang_VD1\obj\Debug\2011438_HoangNgocMinhThang_VD1.csproj.GenerateResource.cache
+C:\Users\thang\Desktop\PTUDDK\Lab02\2011438_HoangNgocMinhThang_VD1\2011438_HoangNgocMinhThang_VD1\obj\Debug\2011438_HoangNgocMinhThang_VD1.csproj.CoreCompileInputs.cache
+C:\Users\thang\Desktop\PTUDDK\Lab02\2011438_HoangNgocMinhThang_VD1\2011438_HoangNgocMinhThang_VD1\obj\Debug\2011438_HoangNgocMinhThang_VD1.exe
+C:\Users\thang\Desktop\PTUDDK\Lab02\2011438_HoangNgocMinhThang_VD1\2011438_HoangNgocMinhThang_VD1\obj\Debug\2011438_HoangNgocMinhThang_VD1.pdb

@@ -1,0 +1,13 @@
+X:\Chuong2\Chuong2\Chuong2\bin\Debug\netcoreapp3.1\Chuong2.exe
+X:\Chuong2\Chuong2\Chuong2\bin\Debug\netcoreapp3.1\Chuong2.deps.json
+X:\Chuong2\Chuong2\Chuong2\bin\Debug\netcoreapp3.1\Chuong2.runtimeconfig.json
+X:\Chuong2\Chuong2\Chuong2\bin\Debug\netcoreapp3.1\Chuong2.runtimeconfig.dev.json
+X:\Chuong2\Chuong2\Chuong2\bin\Debug\netcoreapp3.1\Chuong2.dll
+X:\Chuong2\Chuong2\Chuong2\bin\Debug\netcoreapp3.1\Chuong2.pdb
+X:\Chuong2\Chuong2\Chuong2\obj\Debug\netcoreapp3.1\Chuong2.csprojAssemblyReference.cache
+X:\Chuong2\Chuong2\Chuong2\obj\Debug\netcoreapp3.1\Chuong2.AssemblyInfoInputs.cache
+X:\Chuong2\Chuong2\Chuong2\obj\Debug\netcoreapp3.1\Chuong2.AssemblyInfo.cs
+X:\Chuong2\Chuong2\Chuong2\obj\Debug\netcoreapp3.1\Chuong2.csproj.CoreCompileInputs.cache
+X:\Chuong2\Chuong2\Chuong2\obj\Debug\netcoreapp3.1\Chuong2.dll
+X:\Chuong2\Chuong2\Chuong2\obj\Debug\netcoreapp3.1\Chuong2.pdb
+X:\Chuong2\Chuong2\Chuong2\obj\Debug\netcoreapp3.1\Chuong2.genruntimeconfig.cache

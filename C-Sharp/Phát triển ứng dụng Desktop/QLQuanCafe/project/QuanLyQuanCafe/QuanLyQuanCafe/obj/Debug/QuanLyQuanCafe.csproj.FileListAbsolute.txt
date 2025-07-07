@@ -1,0 +1,13 @@
+E:\project_c#\C-Sharp\Phát triển ứng dụng Desktop\QLQuanCafe\project\QuanLyQuanCafe\QuanLyQuanCafe\bin\Debug\QuanLyQuanCafe.exe.config
+E:\project_c#\C-Sharp\Phát triển ứng dụng Desktop\QLQuanCafe\project\QuanLyQuanCafe\QuanLyQuanCafe\bin\Debug\QuanLyQuanCafe.exe
+E:\project_c#\C-Sharp\Phát triển ứng dụng Desktop\QLQuanCafe\project\QuanLyQuanCafe\QuanLyQuanCafe\bin\Debug\QuanLyQuanCafe.pdb
+E:\project_c#\C-Sharp\Phát triển ứng dụng Desktop\QLQuanCafe\project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.csproj.AssemblyReference.cache
+E:\project_c#\C-Sharp\Phát triển ứng dụng Desktop\QLQuanCafe\project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.Properties.Resources.resources
+E:\project_c#\C-Sharp\Phát triển ứng dụng Desktop\QLQuanCafe\project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.csproj.GenerateResource.cache
+E:\project_c#\C-Sharp\Phát triển ứng dụng Desktop\QLQuanCafe\project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.csproj.CoreCompileInputs.cache
+E:\project_c#\C-Sharp\Phát triển ứng dụng Desktop\QLQuanCafe\project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.exe
+E:\project_c#\C-Sharp\Phát triển ứng dụng Desktop\QLQuanCafe\project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.pdb
+E:\project_c#\C-Sharp\Phát triển ứng dụng Desktop\QLQuanCafe\project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.frmLogin.resources
+E:\project_c#\C-Sharp\Phát triển ứng dụng Desktop\QLQuanCafe\project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.frmTableManagement.resources
+E:\project_c#\C-Sharp\Phát triển ứng dụng Desktop\QLQuanCafe\project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.frmAccountProfile.resources
+E:\project_c#\C-Sharp\Phát triển ứng dụng Desktop\QLQuanCafe\project\QuanLyQuanCafe\QuanLyQuanCafe\obj\Debug\QuanLyQuanCafe.fAdmin.resources

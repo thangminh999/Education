@@ -1,0 +1,103 @@
+﻿@model BookStore.Models.Book
+@using BookStore.Models
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<hr />
+<div class="row">
+    <div class="col-md-1">
+    </div>
+
+    <div class="col-md-3">
+        @if (Model.ImagePath == null)
+        {
+            <img src="~/img/Image/resim-yok.png" width="175" height="250" />
+        }
+        else
+        {
+            <img src="@Model.ImagePath" width="175" height="250" />
+        }
+    </div>
+    <div class="col-md-4">
+        <h1>Cập nhật sách</h1>
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="CategoryId" class="control-label">Chọn thể loại</label>
+                <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="AuthorId" class="control-label">Chọn tác giả</label>
+                <select asp-for="AuthorId" class="form-control" asp-items="ViewBag.AuthorId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label">Tên sách</label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PageCount" class="control-label">Số trang</label>
+                <input asp-for="PageCount" class="form-control" />
+                <span asp-validation-for="PageCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PublishDate" class="control-label">Chọn ngày</label>
+                <input asp-for="PublishDate" class="form-control" />
+                <span asp-validation-for="PublishDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Nhập tóm tắt sách</label>
+                <textarea asp-for="Description" class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                Thêm hình ảnh
+                <input asp-for="ImagePath" class="form-control" type="hidden" />
+                <input asp-for="ImagePath" class="form-control" type="file" />
+                <span asp-validation-for="ImagePath" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StockCount" class="control-label">Nhập số lượng tồn kho</label>
+                <input asp-for="StockCount" class="form-control" />
+                <span asp-validation-for="StockCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label">Nhập giá sách</label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                 @if (Model.StockCount>0)
+                {
+                    <label asp-for="IsActive" class="control-label">Tình trạng tồn kho</label>
+                    <select asp-for="IsActive" class="form-select" aria-label="Stok Durumu">
+
+                        <option value="True" selected>Trong kho</option>
+                        <option value="False">Hết hàng</option>
+                    </select>
+                }
+                else
+                {
+                    <label asp-for="IsActive" class="control-label">Tình trạng tồn kho</label>
+                    <select asp-for="IsActive" class="form-select" aria-label="Stok Durumu">
+
+                        <option value="True">Trong kho</option>
+                        <option value="False" selected>Hết hàng</option>
+                    </select>
+                }
+
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Biên tập" class="btn btn-success" />
+                <a asp-action="Index" class="btn btn-primary">Quay lại danh sách</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

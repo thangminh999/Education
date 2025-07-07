@@ -1,0 +1,9 @@
+D:\2011438\_LAB_DesktopDevelop-master\Lab7_Advanced_Command\Lab7_Advanced_Command\bin\Debug\Lab7_Advanced_Command.exe.config
+D:\2011438\_LAB_DesktopDevelop-master\Lab7_Advanced_Command\Lab7_Advanced_Command\bin\Debug\Lab7_Advanced_Command.exe
+D:\2011438\_LAB_DesktopDevelop-master\Lab7_Advanced_Command\Lab7_Advanced_Command\bin\Debug\Lab7_Advanced_Command.pdb
+D:\2011438\_LAB_DesktopDevelop-master\Lab7_Advanced_Command\Lab7_Advanced_Command\obj\Debug\Lab7_Advanced_Command.csprojResolveAssemblyReference.cache
+D:\2011438\_LAB_DesktopDevelop-master\Lab7_Advanced_Command\Lab7_Advanced_Command\obj\Debug\Lab7_Advanced_Command.Form1.resources
+D:\2011438\_LAB_DesktopDevelop-master\Lab7_Advanced_Command\Lab7_Advanced_Command\obj\Debug\Lab7_Advanced_Command.Properties.Resources.resources
+D:\2011438\_LAB_DesktopDevelop-master\Lab7_Advanced_Command\Lab7_Advanced_Command\obj\Debug\Lab7_Advanced_Command.csproj.GenerateResource.Cache
+D:\2011438\_LAB_DesktopDevelop-master\Lab7_Advanced_Command\Lab7_Advanced_Command\obj\Debug\Lab7_Advanced_Command.exe
+D:\2011438\_LAB_DesktopDevelop-master\Lab7_Advanced_Command\Lab7_Advanced_Command\obj\Debug\Lab7_Advanced_Command.pdb

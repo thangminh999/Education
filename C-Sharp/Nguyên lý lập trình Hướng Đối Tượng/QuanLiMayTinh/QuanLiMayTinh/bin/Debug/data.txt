@@ -1,0 +1,6 @@
+CPU,Intel,30*RAM,SamSung,50*HDD,Seagate,500
+CPU,Intel,300*RAM,SamSung,50*HDD,Seagate,500
+CPU,Intel,300*RAM,Oppo,300*SSD,Seagate,500
+CPU,Intel,300*RAM,SamSung,50*HDD,Seagate,500
+CPU,Intel,300*RAM,Oppo,300*SSD,Seagate,500
+CPU,Intel,300*RAM,SamSung,50*HDD,Seagate,500

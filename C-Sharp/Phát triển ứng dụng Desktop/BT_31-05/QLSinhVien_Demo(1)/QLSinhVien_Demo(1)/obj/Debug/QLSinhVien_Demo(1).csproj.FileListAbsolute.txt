@@ -1,0 +1,16 @@
+C:\Users\thang\Desktop\BT_31-05\QLSinhVien_Demo(1)\QLSinhVien_Demo(1)\bin\Debug\QLSinhVien_Demo(1).exe.config
+C:\Users\thang\Desktop\BT_31-05\QLSinhVien_Demo(1)\QLSinhVien_Demo(1)\bin\Debug\QLSinhVien_Demo(1).exe
+C:\Users\thang\Desktop\BT_31-05\QLSinhVien_Demo(1)\QLSinhVien_Demo(1)\bin\Debug\QLSinhVien_Demo(1).pdb
+C:\Users\thang\Desktop\BT_31-05\QLSinhVien_Demo(1)\QLSinhVien_Demo(1)\bin\Debug\EntityFramework.dll
+C:\Users\thang\Desktop\BT_31-05\QLSinhVien_Demo(1)\QLSinhVien_Demo(1)\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\thang\Desktop\BT_31-05\QLSinhVien_Demo(1)\QLSinhVien_Demo(1)\bin\Debug\EntityFramework.xml
+C:\Users\thang\Desktop\BT_31-05\QLSinhVien_Demo(1)\QLSinhVien_Demo(1)\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\thang\Desktop\BT_31-05\QLSinhVien_Demo(1)\QLSinhVien_Demo(1)\obj\Debug\QLSinhVien_Demo(1).csproj.AssemblyReference.cache
+C:\Users\thang\Desktop\BT_31-05\QLSinhVien_Demo(1)\QLSinhVien_Demo(1)\obj\Debug\QLSinhVien_Demo(1).csproj.SuggestedBindingRedirects.cache
+C:\Users\thang\Desktop\BT_31-05\QLSinhVien_Demo(1)\QLSinhVien_Demo(1)\obj\Debug\QLSinhVien_Demo_1_.frmSinhVien.resources
+C:\Users\thang\Desktop\BT_31-05\QLSinhVien_Demo(1)\QLSinhVien_Demo(1)\obj\Debug\QLSinhVien_Demo_1_.Properties.Resources.resources
+C:\Users\thang\Desktop\BT_31-05\QLSinhVien_Demo(1)\QLSinhVien_Demo(1)\obj\Debug\QLSinhVien_Demo(1).csproj.GenerateResource.cache
+C:\Users\thang\Desktop\BT_31-05\QLSinhVien_Demo(1)\QLSinhVien_Demo(1)\obj\Debug\QLSinhVien_Demo(1).csproj.CoreCompileInputs.cache
+C:\Users\thang\Desktop\BT_31-05\QLSinhVien_Demo(1)\QLSinhVien_Demo(1)\obj\Debug\QLSinhVien_Demo(1).csproj.CopyComplete
+C:\Users\thang\Desktop\BT_31-05\QLSinhVien_Demo(1)\QLSinhVien_Demo(1)\obj\Debug\QLSinhVien_Demo(1).exe
+C:\Users\thang\Desktop\BT_31-05\QLSinhVien_Demo(1)\QLSinhVien_Demo(1)\obj\Debug\QLSinhVien_Demo(1).pdb

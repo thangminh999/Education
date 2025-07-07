@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43053460-7EC1-48F8-A6BB-C2DD3B68744C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyPhanSo</RootNamespace>
+    <AssemblyName>QuanLyPhanSo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MangPhanSo.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="PhanSo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\7412119" />
+    <None Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\7412119%281%29" />
+    <None Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\81272162" />
+    <None Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\81272162%281%29" />
+    <None Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\behaviors-0eeb30ff.js.tải xuống" />
+    <None Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\chunk-color-modes-322b85a1.js.tải xuống" />
+    <None Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\chunk-edit-7159c8a1.js.tải xuống" />
+    <None Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\chunk-frameworks-a4741549.js.tải xuống" />
+    <None Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\chunk-toast-700b103a.js.tải xuống" />
+    <None Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\chunk-vendor-8fe261d7.js.tải xuống" />
+    <None Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\diffs-bae7cbb9.js.tải xuống" />
+    <None Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\environment-f0adafbf.js.tải xuống" />
+    <None Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\issue-to-discussion-conversions-b50f9bab.js.tải xuống" />
+    <None Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\issues-f041d725.js.tải xuống" />
+    <None Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\optimizely-b4828d56.js.tải xuống" />
+    <None Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\repositories-3bf355a3.js.tải xuống" />
+    <None Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\structured-issues-33152698.js.tải xuống" />
+    <None Include="bin\Debug\QuanLyPhanSo.vshost.exe.config" />
+    <None Include="bin\Debug\QuanLyPhanSo.vshost.exe.manifest" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\data.txt" />
+    <Content Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018.html" />
+    <Content Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\behaviors-6a9712c2bb90c4b4fe4c01fde615d4be.css" />
+    <Content Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\frameworks-8e8eb29a2bb884e693c39ae78a84b81d.css" />
+    <Content Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\github-3f577ec32df6484ac058aaf67afee30b.css" />
+    <Content Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\search-key-slash.svg" />
+    <Content Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\translateelement.css" />
+    <Content Include="bin\Debug\OOP2018 _ data.txt at master · thongt _ OOP2018_files\translate_24dp.png" />
+    <Content Include="bin\Debug\QuanLyPhanSo.vshost.exe" />
+    <Content Include="obj\Debug\QuanLyPhanSo.csproj.FileListAbsolute.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
